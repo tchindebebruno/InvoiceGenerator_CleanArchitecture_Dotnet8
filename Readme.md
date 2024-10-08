@@ -1,16 +1,16 @@
-# Générateur de Factures
+# GÃ©nÃ©rateur de Factures
 
-Ce programme permet de générer des factures au format PNG en utilisant SkiaSharp. 
-Il crée une facture visuelle à partir de données définies dans le code, incluant un logo, un titre, une description et divers attributs.
+Ce programme permet de gÃ©nÃ©rer des factures au format PNG en utilisant SkiaSharp. 
+Il crÃ©e une facture visuelle Ã  partir de donnÃ©es dÃ©finies dans le code, incluant un logo, un titre, une description et divers attributs.
 
-## Prérequis
+## PrÃ©requis
 
-- .NET Core 3.1 ou version ultérieure (.NET 8 recommandé)
-- [SkiaSharp](https://github.com/mono/SkiaSharp) : bibliothèque graphique pour le rendu 2D.
+- .NET Core 3.1 ou version ultÃ©rieure (.NET 8 recommandÃ©)
+- [SkiaSharp](https://github.com/mono/SkiaSharp) : bibliothÃ¨que graphique pour le rendu 2D.
 
 ## Installation
 
-1. Clonez le dépôt :
+1. Clonez le dÃ©pÃ´t :
 
    ```bash
    git clone https://github.com/tchindebebruno/InvoiceGenerator_CleanArchitecture_Dotnet8.git
@@ -19,48 +19,47 @@ Il crée une facture visuelle à partir de données définies dans le code, incluant
 
 2. Ouvrez le projet dans votre IDE (comme Visual Studio ou tout autre).
 
-3. Restaurez les dépendances :
+3. Restaurez les dÃ©pendances :
 
    ```bash
    dotnet restore
    ```
 
-4. Assurez-vous d'avoir un fichier `logo.png` dans le même répertoire que l'exécutable ou spécifiez un chemin alternatif dans le code.
+4. Assurez-vous d'avoir un fichier `logo.png` dans le mÃªme rÃ©pertoire que l'exÃ©cutable ou spÃ©cifiez un chemin alternatif dans le code.
 
 ## Utilisation
 
-Pour générer une facture, exécutez le programme :
+Pour gÃ©nÃ©rer une facture, exÃ©cutez le programme :
 
 ```bash
 dotnet run
 ```
 
-Le programme créera une facture nommée `facture.png` dans le répertoire de travail.
+Le programme crÃ©era une facture nommÃ©e `facture.png` dans le rÃ©pertoire de travail.
 
 ### Personnalisation
 
-Vous pouvez personnaliser les éléments suivants dans le code :
+Vous pouvez personnaliser les Ã©lÃ©ments suivants dans le code :
 
 - **Dimensions de la facture** : Modifiez `width` et `height` pour changer la taille de la facture.
-- **Logo** : Remplacez `logo.png` par votre propre logo en ajustant le chemin d'accès.
-- **Données de la facture** : Mettez à jour le titre, la description et les attributs de la facture selon vos besoins.
+- **Logo** : Remplacez `logo.png` par votre propre logo en ajustant le chemin d'accÃ¨s.
+- **DonnÃ©es de la facture** : Mettez Ã  jour le titre, la description et les attributs de la facture selon vos besoins.
 
 ## Architecture
 
-Le programme est organisé selon une architecture clean, avec les couches suivantes :
+Le programme est organisÃ© selon une architecture clean, avec les couches suivantes :
 
-- **Domain** : Contient les modèles et la logique métier.
-- **Application** : Contient les services et la logique de génération de la facture.
-- **Infrastructure** : Gère l'accès aux fichiers et les opérations d'entrée/sortie.
-- **Presentation** : Gère les interactions utilisateur et la présentation des résultats.
+- **Domain** : Contient les modÃ¨les et la logique mÃ©tier.
+- **Application** : Contient les services et la logique de gÃ©nÃ©ration de la facture.
+- **Infrastructure** : GÃ¨re l'accÃ¨s aux fichiers et les opÃ©rations d'entrÃ©e/sortie.
+- **Presentation** : GÃ¨re les interactions utilisateur et la prÃ©sentation des rÃ©sultats.
 
 ## License
 
-Ce projet est sous la licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous la licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de dÃ©tails.
 
 ## Acknowledgments
 
 - [SkiaSharp](https://github.com/mono/SkiaSharp) pour le rendu graphique.
-- [OpenAI](https://openai.com) pour l'assistance dans la création de code et d'architecture.
 
 ---
