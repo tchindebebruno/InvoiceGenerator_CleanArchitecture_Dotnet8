@@ -19,7 +19,7 @@ namespace InvoiceGenerator_CleanArchitecture_Dotnet8.Presentation
         public void CreateInvoice(string logoPath)
         {
             _invoiceService.GenerateInvoice(logoPath);
-            Console.WriteLine("Facture créée avec succès !");
+            Console.WriteLine($"Facture créée avec succès {logoPath}");
         }
     }
 

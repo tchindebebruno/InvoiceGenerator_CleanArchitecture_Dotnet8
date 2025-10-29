@@ -1,8 +1,9 @@
-﻿using InvoiceGenerator_CleanArchitecture_Dotnet8.Infrastructure;
+﻿using Image_Generator.Application;
+using InvoiceGenerator_CleanArchitecture_Dotnet8.Application;
 using SkiaSharp;
 using System.Drawing;
 
-namespace InvoiceGenerator_CleanArchitecture_Dotnet8.Application
+namespace Image_Generator.Infrastructure
 {
     public class InvoiceService : IInvoiceService
     {

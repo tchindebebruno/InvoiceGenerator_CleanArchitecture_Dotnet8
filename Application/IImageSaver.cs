@@ -1,6 +1,6 @@
 ﻿using SkiaSharp;
 
-namespace InvoiceGenerator_CleanArchitecture_Dotnet8.Infrastructure
+namespace Image_Generator.Application
 {
     public interface IImageSaver
     {
